@@ -1,0 +1,245 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <style>
+      #button1 , #button2 {
+        display:inline-block;
+        /**other codes**/
+      }
+</style>
+<link rel="icon" href="{% static "imagess/fav.jpg" %}" type='image/x-icon'/>
+    <title>IELTS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% load static %}
+<!-- Stopwatch stylesheet -->
+        <link rel="stylesheet" href="{% static "clock.css" %}" type="text/css">
+    
+    <link rel="icon" href="{% static "img/fav.png" %}">
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="{% static "fontss/icomoon/style.css" %}">
+
+    <link rel="stylesheet" href="{% static "csss/bootstrap.min.css" %}">
+    <link rel="stylesheet" href="{% static "csss/jquery-ui.css" %}">
+    <link rel="stylesheet" href="{% static "csss/owl.carousel.min.css" %}">
+    <link rel="stylesheet" href="{% static "csss/owl.theme.default.min.css" %}">
+    <link rel="stylesheet" href="{% static "csss/owl.theme.default.min.css" %}">
+
+    <link rel="stylesheet" href="{% static "csss/jquery.fancybox.min.css" %}">
+
+    <link rel="stylesheet" href="{% static "csss/bootstrap-datepicker.css" %}">
+
+    <link rel="stylesheet" href="{% static "fontss/flaticon/font/flaticon.css" %}">
+
+    <link rel="stylesheet" href="{% static "csss/aos.css" %}">
+
+    <link rel="stylesheet" href="{% static "csss/style.css" %}">
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+   
+    <div class="top-bar py-3 bg-light" id="home-section">
+      <div class="container">
+        <div class="row align-items-center">
+         
+          <div class="col-6 text-left">
+            <ul class="social-media">
+              <li><a href="https://www.facebook.com/analyticsdomain/" class=""><span class="icon-facebook"></span></a></li>
+              <li><a href="https://twitter.com/AnalyticsDomain" class=""><span class="icon-twitter"></span></a></li>
+              <li><a href="https://www.instagram.com/analytics_domain/" class=""><span class="icon-instagram"></span></a></li>
+              <li><a href="https://www.linkedin.com/company/analytics-domain/" class=""><span class="icon-linkedin"></span></a></li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <p class="mb-0 float-right">
+              <span class="mr-3"><a href="tel://#"> <span class="icon-phone mr-2" style="position: relative; top: 2px;"></span><span class="d-none d-lg-inline-block text-black">(+91) 8459044764</span></a></span>
+              <span><a href="/home/contact-us/"><span class="icon-envelope mr-2" style="position: relative; top: 2px;"></span><span class="d-none d-lg-inline-block text-black">contact@analyticsdomain.com</span></a></span>
+            </p>
+            
+          </div>
+        </div>
+      </div> 
+    </div>
+
+    <header class="site-navbar py-4 bg-white js-sticky-header site-navbar-target" role="banner">
+
+      <div class="container">
+        <div class="row align-items-center">
+          
+          <div class="col-6 col-xl-2">
+            <h1 class="mb-0 site-logo"><a href="/" class="text-black mb-0"><img src="{% static "imagess/logo.jpg" %}" alt=""></a></h1>
+          </div>
+          <div class="col-12 col-md-10 d-none d-xl-block">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+
+              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                <li><a href="https://datastudio.google.com/open/1RvHgweqVLs_qDBW2v9l4OLA9m358Jj6P" class="nav-link">Analytics</a></li>
+                <li><a href="/home/rules/" class="nav-link">Rules</a></li>
+                <li><a href="/" class="nav-link">Logout</a></li>
+              </ul>
+            </nav>
+          </div>
+
+
+          <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black float-right"><span class="icon-menu h3"></span></a></div>
+
+        </div>
+      </div> 
+      
+    </header>
+
+  
+    
+  <br><br><br><br><br><br>
+  <h1 style="font-size: 40px;color: black; font-weight: bolder;height:400px; background-image: url({% static "imagess/header.jpg" %});" align="left "> <br><br><br>CONFIRM SUBMISSION AND CHECK</h1>
+    <form action="/home/register/login/check/start/choice/choicemade/" method="POST">
+      <center><br><br>
+       <p align="left"> Note: You cannot edit the submitted data now.</p>
+       <h2 style="font-size: 20px;color: black; font-weight: bold;">YOUR TOPIC:</h2><br>
+            <textarea name="Topic" cols="70" rows="3" align="center"  value="{{topic|safe}}" id="topic"  readonly>{{topic|safe}}</textarea>
+             <input name="text" cols="1000" rows="1000" class="form-control rounded-0" value="{{text}}" hidden>
+             <br><br>
+
+        </center>
+        <h2 align="center" style="font-size: 20px;color: black; font-weight: bold">YOUR ESSAY:</h2>
+        <p align="center" style="font-size: 17px;">(Click on the essay to reveal spelling mistakes.)
+        <textarea width="700" cols="150" rows="10" spellcheck="true" style="margin-right: 100px;margin-left: 100px;" id="essay" contenteditable="false" onclick="read()">{{text|safe}}</textarea>
+        <div align="center">
+
+            <br>&nbsp&nbsp
+            <p style="color: red"> NOTE: please dont refresh this might take a few minutes to load...</p>
+            <input type="submit" id="button1" name="checkscore"  class="btn btn-black rounded-0 py-2 px-2"
+                value="GRAMMATICAL RANGE AND ACCURACY"  style="font-size:15px;display: inline-block; margin: 0 auto;text-align: center ">&nbsp &nbsp&nbsp&nbsp
+            <input type="submit" id="button2" name="cohession"  class="btn btn-black rounded-0 py-2 px-2"
+                value="COHESION AND COHERENCE"  style="font-size:15px;display: inline-block; margin: 0 auto;text-align: center ">
+            <div name='spell' id="feedbackErrorMessage" style="color: red;"></div><br><br>
+            <input type="submit" id="button2" name="version2"  class="btn btn-black rounded-0 py-2 px-2"
+                value="version2"  style="font-size:15px;display: inline-block; margin: 0 auto;text-align: center ">
+            <div name='spell' id="feedbackErrorMessage" style="color: red;"></div>
+        </div>
+       
+      </form>
+
+<footer class="page-footer font-small blue">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2019 Copyright:
+    <a href="https://analyticsdomain.com/"> analyticsdomain.com/</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!--
+  <script type="text/javascript"
+    src="https://www.languagetool.org/js/jquery-1.7.0.min.js"></script>
+<script type="text/javascript"
+    src="https://www.languagetool.org/online-check/tiny_mce/tiny_mce.js"></script>
+<script type="text/javascript"
+    src="https://www.languagetool.org/online-check/tiny_mce/plugins/atd-tinymce/editor_plugin2.js"></script>
+ 
+<script language="javascript" type="text/javascript">  
+  tinyMCE.init({
+     mode : "textareas",
+     plugins : "readonly",
+     paste_text_sticky : true,
+     theme: "advanced",
+    
+     setup : function(ed) {
+         ed.onInit.add(function(ed) {
+             ed.pasteAsPlainText = true;
+         });
+     },  
+     /* translations: */
+     languagetool_i18n_no_errors : {
+         // "No errors were found.":
+         "de-DE": "Keine Fehler gefunden."
+     },
+     languagetool_i18n_explain : {
+         // "Explain..." - shown if there is an URL with a detailed description:
+         "de-DE": "Mehr Informationen..."
+     },
+     languagetool_i18n_ignore_once : {
+         // "Ignore this error":
+         "de-DE": "Hier ignorieren"
+     },
+     languagetool_i18n_ignore_all : {
+         // "Ignore this kind of error":
+         "de-DE": "Fehler dieses Typs ignorieren"
+     },
+     languagetool_i18n_rule_implementation : {
+         // "Rule implementation":
+         "de-DE": "Implementierung der Regel"
+     },
+ 
+     languagetool_i18n_current_lang :
+         function() { return document.checkform.lang.value; },
+     /* The URL of your LanguageTool server.
+        If you use your own server here and it's not running on the same domain 
+        as the text form, make sure the server gets started with '--allow-origin ...' 
+        and use 'https://your-server/v2/check' as URL: */
+     languagetool_rpc_url                 : "https://languagetool.org/api/v2/check",
+     /* edit this file to customize how LanguageTool shows errors: */
+     languagetool_css_url :
+         "https://www.languagetool.org/online-check/" +
+         "tiny_mce/plugins/atd-tinymce/css/content.css",
+     /* this stuff is a matter of preference: */
+     theme                              : "advanced",
+     theme_advanced_buttons1            : "",
+     theme_advanced_buttons2            : "",
+     theme_advanced_buttons3            : "",
+     theme_advanced_toolbar_location    : "none",
+     theme_advanced_toolbar_align       : "left",
+     theme_advanced_statusbar_location  : "bottom",
+     theme_advanced_path                : false,
+     theme_advanced_resizing            : true,
+     theme_advanced_resizing_use_cookie : false,
+     gecko_spellcheck                   : true
+  });
+ 
+  function doit() {
+     var langCode = document.checkform.lang.value;
+     tinyMCE.activeEditor.execCommand("mceWritingImprovementTool", langCode);
+  }
+
+-->
+</script>
+   <script type="text/javascript" language="javascript" >
+  function read(){
+       document.getElementById("essay").readOnly = "true";
+  document.getElementById("topic").readOnly = "true";
+
+    }
+ 
+</script>
+
+  <script src="{% static "jss/jquery-3.3.1.min.js" %}"></script>
+  <script src="{% static "jss/jquery-migrate-3.0.1.min.js" %}"></script>
+  <script src="{% static "jss/jquery-ui.js" %}"></script>
+  <script src="{% static "jss/popper.min.js" %}"></script>
+  <script src="{% static "jss/bootstrap.min.js" %}"></script>
+  <script src="{% static "jss/owl.carousel.min.js" %}"></script>
+  <script src="{% static "jss/jquery.stellar.min.js" %}"></script>
+  <script src="{% static "jss/jquery.countdown.min.js" %}"></script>
+  <script src="{% static "jss/bootstrap-datepicker.min.js" %}"></script>
+  <script src="{% static "jss/jquery.easing.1.3.js" %}"></script>
+  <script src="{% static "jss/aos.js" %}"></script>
+  <script src="{% static "jss/jquery.fancybox.min.js" %}"></script>
+  <script src="{% static "jss/jquery.sticky.js" %}"></script>
+
+  
+  <script src="{% static "jss/main.js" %}"></script>
+    
+  </body>
+</html>
