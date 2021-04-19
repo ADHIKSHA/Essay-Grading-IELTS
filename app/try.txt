@@ -1,0 +1,5 @@
+from trycheck import *
+
+f=open('MyCity.txt','r')
+no=Check_spelling(f)
+print(no)
