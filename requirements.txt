@@ -1,5 +1,5 @@
 cycler==0.10.0
-Django==2.2.2
+Django==2.2.27
 joblib==0.13.2
 kiwisolver==1.1.0
 nltk==3.4.1
